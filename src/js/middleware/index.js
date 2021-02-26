@@ -2,7 +2,7 @@ import { ADD_ARTICLE } from "../constants/action-types";
 
 const forbiddenwords = ["spam", "money"];
 
-export function forbiddenwordsMiddleware({ dispatch }){
+export function forbiddenWordsMiddleware({ dispatch }){
     return function(next) {
         return function(action) {
             // enjoy
